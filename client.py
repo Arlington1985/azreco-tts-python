@@ -4,6 +4,7 @@ import logging
 import time
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 import requests
+from playsound import playsound
 
 
 class Synthesizer(object):
@@ -93,6 +94,9 @@ def main():
     with open(opts.output, "wb") as out:
         out.write(result)
     logging.info("Your audio has been written to file {}".format(opts.output))
+    playsound(opts.output)
+    logging.info("Successfully played audio file {}".format(opts.output))
+
 
 if __name__ == '__main__':
     main()
