@@ -1,31 +1,24 @@
-# AzReco Text To Speech API Python example
-Example python script to help you integrate with our text-to-speech API.
+# AzReco **Text To Speech** API python example
+Sample python script to convert your text to speech with our API. It will generate `.wav` file and play it based given input.
 
-This is an example python script for uploading text file and saving the audio into a .wav file.
+PS.. _We appriciate :star::star::star::star::star: very much :heart_eyes:_
 
-# Supporting languages
-AZERBAIJANI (az-AZ)
+## Supported languages
+- AZERBAIJANI (az-AZ)
+- TURKISH  (tr-TR)
 
-TURKISH  (tr-TR)
-
-# Requirements
-
-You will need to have the requests module installed in your Python environment.
-
-pip install requests
-
-# Usage example:
-
-python client.py --input-type file -t text/example-tr.txt -l tr-TR -i api_user_id -k api_token -o example-tr.wav  
-
-or
-
-python client.py --input-type text -t "any text" -l tr-TR -i api_user_id -k api_token -o example-tr.wav  
-
-In this example for input type 'file' the script uploads 'example-tr.txt', synthesizes speech using our tr-TR text-to-speech and saves the resulting audio as 'example-tr.wav' when the synthesizing process finished. For input type 'text' the script sends text to the server, synthesizes speech using our tr-TR text-to-speech and saves the resulting audio as 'example-tr.wav' when the synthesizing process finished. 
+## Requirements
+- You will need first to install [pipenv](https://github.com/pypa/pipenv) as a package management tool
+- Clone the project via `git clone` command 
+- `pipenv install` command will install all the required libraries
 
 
-# How to get user id and token?
+## Usage example:
+- To activate environment execute `pipenv shell`
+- Execute client.py via correct arguments. Let's see details under the following examples: 
+  - For input type _file_ the script uploads `example-tr.txt`, synthesizes speech using our _tr-TR_ text-to-speech and saves the resulting audio as `example-tr.wav` when the synthesizing process finished: `python client.py --input-type file -t text/example-tr.txt -l tr-TR -i api_user_id -k api_token -o example-tr.wav`
+  - For input type _text_ the script sends text to the server, synthesizes speech using our _tr-TR_ text-to-speech and saves the resulting audio as `example-tr.wav` when the synthesizing process finished:  `python client.py --input-type text -t "any text" -l tr-TR -i api_user_id -k api_token -o example-tr.wav`  
 
-To get user id and API token, send a request to info@azreco.az.
-To confirm your request, we will ask you some details about your purpose in using API.
+
+## Wanna try?
+In order to to get **API user id** and **API token**, please send us request via email to info@azreco.az address with the details of motivation and purpose of using it. 
