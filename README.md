@@ -4,8 +4,8 @@ Sample python script to convert your text to speech with our API. It will genera
 PS.. _We appriciate :star::star::star::star::star: very much :heart_eyes:_
 
 ## Supported languages
-- AZERBAIJANI (az-AZ)
-- TURKISH  (tr-TR)
+- Azerbaijani (az-AZ)
+- Turkish (tr-TR)
 
 ## Requirements
 - You will need first to install [pipenv](https://github.com/pypa/pipenv) as a package management tool
